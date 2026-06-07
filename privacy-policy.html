@@ -26,7 +26,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: April 27, 2026</p>
+<p class="updated">Last updated: June 7, 2026</p>
 
 <p>This Privacy Policy describes how Treadmill Workout, operated by Mykola Androsovych, an individual entrepreneur registered in Ukraine ("we", "our", or "the app"), collects, uses, and protects your information when you use our mobile application available on Google Play and the Apple App Store.</p>
 
@@ -41,6 +41,8 @@
 
 <p><strong>Information collected automatically:</strong></p>
 <ul>
+  <li><strong>Device identifier:</strong> we collect a hardware device identifier (Android ID on Android; Vendor Identifier on iOS) to manage your free trial period and prevent abuse. This identifier is stored in our cloud database (Firebase Firestore). If you sign in with an account, it is deleted immediately as your data is transferred to your account. If you never sign in, it is automatically deleted 60 days after your last app launch. It is used solely for trial management and is not shared with third parties or used for advertising.</li>
+  <li><strong>Anonymous authentication token:</strong> on first launch, the app automatically creates an anonymous Firebase account (no email or password required) to securely access the cloud database. This anonymous account is linked to your real account if you choose to sign in, and is automatically deleted by Firebase after 30 days of inactivity.</li>
   <li><strong>Advertising data:</strong> our free version displays ads through Google AdMob, which may collect advertising identifiers, device information, and usage data in accordance with <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
   <li><strong>Analytics data:</strong> we use Firebase Analytics to understand how users interact with the app (e.g., screens visited, feature usage). This data is collected in aggregate and associated with an anonymous device identifier.</li>
   <li><strong>Purchase data:</strong> in-app purchases are processed by Google Play or Apple App Store. We do not collect or store your payment information. Purchase status is used solely to determine your subscription tier.</li>
@@ -50,7 +52,7 @@
 <ul>
   <li>To provide workout tracking, calorie estimation, and training features</li>
   <li>To synchronize your data across devices when you sign in</li>
-  <li>To manage your subscription status (Trial, Free, or Pro)</li>
+  <li>To manage your subscription and trial status (Trial, Free, or Pro), including preventing trial period abuse across reinstalls</li>
   <li>To display advertisements in the free version</li>
   <li>To improve the app through anonymous usage analytics</li>
   <li>To send transactional emails (e.g., account verification, password reset) when you create an account — we do not send marketing or promotional emails</li>
@@ -73,7 +75,8 @@
   <li><strong>Google AdMob</strong> — for displaying advertisements (<a href="https://policies.google.com/privacy">Google Privacy Policy</a>)</li>
   <li><strong>Firebase Analytics</strong> — for anonymous usage analytics (<a href="https://policies.google.com/privacy">Google Privacy Policy</a>)</li>
   <li><strong>Google Play Billing / Apple StoreKit</strong> — for processing in-app purchases</li>
-  <li><strong>Firebase Authentication &amp; Firestore</strong> — for account login and data synchronization (if you choose to sign in)</li>
+  <li><strong>Firebase Authentication &amp; Firestore</strong> — for anonymous authentication (automatic, no sign-in required) and account login and data synchronization (if you choose to sign in). Anonymous sessions are used solely to securely access trial period data stored per device.</li>
+  <li><strong>RevenueCat</strong> — for managing in-app subscription status (<a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>)</li>
 </ul>
 
 <h2>6. Data Sharing</h2>
@@ -109,7 +112,7 @@
 <h2>10. European Privacy Rights (GDPR)</h2>
 <p>If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, you have rights under the General Data Protection Regulation (GDPR):</p>
 <ul>
-  <li><strong>Legal basis for processing:</strong> we process your data based on your consent (analytics, personalized ads), contractual necessity (account sync, subscription management), and legitimate interests (app security and improvement).</li>
+  <li><strong>Legal basis for processing:</strong> we process your data based on your consent (analytics, personalized ads), contractual necessity (account sync, subscription management), and legitimate interests (app security, improvement, and trial period management to prevent abuse).</li>
   <li><strong>Right of access:</strong> request a copy of the personal data we hold about you.</li>
   <li><strong>Right to rectification:</strong> request correction of inaccurate data.</li>
   <li><strong>Right to erasure ("right to be forgotten"):</strong> request deletion of your personal data.</li>
