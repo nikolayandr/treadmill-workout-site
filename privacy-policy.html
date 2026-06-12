@@ -37,14 +37,14 @@
 <p><strong>Information you provide:</strong></p>
 <ul>
   <li><strong>Profile data:</strong> body weight and height, entered voluntarily for calorie calculations. This data is stored locally on your device.</li>
-  <li><strong>Workout data:</strong> workout configurations, segment settings, and workout history. This data is stored locally on your device.</li>
+  <li><strong>Workout data:</strong> workout configurations, segment settings, and workout history. This data is stored locally on your device; if you sign in, a backup copy is synced to the cloud (see Data Storage and Security below).</li>
   <li><strong>Account information:</strong> if you choose to sign in, we collect your email address to enable data synchronization across devices.</li>
 </ul>
 
 <p><strong>Information collected automatically:</strong></p>
 <ul>
   <li><strong>Device identifier:</strong> we collect a hardware device identifier (Android ID on Android; Vendor Identifier on iOS) to manage your free trial period and prevent abuse. This identifier is stored in our cloud database (Firebase Firestore). If you sign in with an account, it is deleted immediately as your data is transferred to your account. If you never sign in, it is automatically deleted 60 days after your last app launch. It is used solely for trial management and is not shared with third parties or used for advertising.</li>
-  <li><strong>Anonymous authentication token:</strong> on first launch, the app automatically creates an anonymous Firebase account (no email or password required) to securely access the cloud database. This anonymous account is linked to your real account if you choose to sign in, and is automatically deleted by Firebase after 30 days of inactivity.</li>
+  <li><strong>Anonymous authentication token:</strong> on first launch, the app automatically creates an anonymous Firebase account (no email or password required) to securely access the cloud database. This anonymous account is linked to your real account if you choose to sign in, and is automatically deleted after 60 days of inactivity.</li>
   <li><strong>Advertising data:</strong> our free version displays ads through Google AdMob, which may collect advertising identifiers, device information, and usage data in accordance with <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
   <li><strong>Analytics data:</strong> we use Firebase Analytics to understand how users interact with the app (e.g., screens visited, feature usage). This data is collected in aggregate and associated with an anonymous device identifier.</li>
   <li><strong>Purchase data:</strong> in-app purchases are processed by Google Play or Apple App Store. We do not collect or store your payment information. Purchase status is used solely to determine your subscription tier.</li>
@@ -70,6 +70,7 @@
 
 <h2>4. Data Storage and Security</h2>
 <p>Your profile and workout data are stored locally on your device by default. If you sign in with an account, your data may be synchronized to our servers (Firebase/Firestore) for cross-device access. We use industry-standard security measures to protect your data.</p>
+<p><strong>Data retention.</strong> Your full workout history always remains on your device until you delete it. When you sign in, a backup copy is synced to our cloud (Firebase/Firestore) for cross-device access and is retained according to your plan: about 60 days on the free tier; for the duration of your subscription plus a short grace period for subscribers; and for as long as you actively use the app for lifetime purchasers. To minimise stored data, the cloud backup is automatically removed after about a year of inactivity &mdash; your on-device history is unaffected and is restored to the cloud when you return. You can delete your data at any time in the app, or request full account deletion by contacting us.</p>
 
 <h2>5. Third-Party Services</h2>
 <p>The app uses the following third-party services that may collect data:</p>
